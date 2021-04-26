@@ -27,11 +27,6 @@ Is this OK? (yes)
 
 ```
 
-## express導入
-```
-> npm install express
-> npm install @types/express            # typescriptのためのnpmだと思う
-```
 
 ## typescript導入
 ```
@@ -47,6 +42,13 @@ Version 4.2.4
 > vi src/index.ts
 ~ 編集 ~
 ```
+
+## express導入
+```
+> npm install express
+> npm install @types/express            # typescriptのためのnpmだと思う
+```
+
 
 ### コンパイル
 ```
