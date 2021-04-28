@@ -71,7 +71,10 @@
     "skipLibCheck": true,                           /* Skip type checking of declaration files. */
     "forceConsistentCasingInFileNames": true        /* Disallow inconsistently-cased references to the same file. */
   },
+  //"files": [                                      /* ファイルを指定する場合はこちら。でもincludeでいいと思う */
+  //  "src/interface/sdType.d.ts"
+  //],
   "include": [
-    "src/**/*"
+    "src/**/*"                                      /* コンパイルする対象ファイルを記述する。 */
   ],
 }
