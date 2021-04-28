@@ -93,3 +93,14 @@ function hello(name: string): string {
 
 console.log(hello("World"));
 ```
+
+## 注意
+### 非同期の処理内で同期を示すawaitの関数は使用できない
+以下はtypescriptではエラーとして出力される
+```
+    // files.forEach(file => {                                              // forEachの中でawaitは使えないらしい。。
+        // let text: string[] = 
+        //    await readFile.readCSV_SJIS(rootdir + "/" + files[i], 1);     // これだとawaitのところでエラーが出る
+        // opeDao.createUserOpeData(text);                                  // エラー内容：'await' 式は、非同期関数内と、モジュールのトップ レベルでのみ許可されます
+    //}
+```
